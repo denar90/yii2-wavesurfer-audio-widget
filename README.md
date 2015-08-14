@@ -35,7 +35,7 @@ echo WaveSurferAudioWidget::widget([
 	'settings' => [
 		'fileUrl' => url_to_your_mp3_file,
 		'init' => [
-			'container' => 'id selector name'
+			'container' => 'selector_name' //it has to be id not class
 		],
 		'callbacks' => [
 			'ready' => new \yii\web\JsExpression("function(event) {
@@ -77,9 +77,3 @@ Supported controls sets in `controls` array
 * `toggleMute` -  Toggles the volume on and off.
 * `toggleInteraction` - Toggle mouse interaction.
 * `toggleScroll` - Toggles scrollParent.
-
-
-
-
-
-
